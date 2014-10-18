@@ -20,39 +20,50 @@
   <input type="submit" class="submit">
 </section> -->
 
-<!-- guests -->
 <section class="how-it-works">
-  <article class="step">
-    <img src="<%= url('images/icons/browse.png') %>" alt="Browse events">
-    <p>Pariatur nobis autem in dolorem ad similique provident maxime explicabo.</p>
-  </article>
-  <article class="step">
-    <img src="<%= url('images/icons/join.png') %>" alt="Join event">
-    <p>Quos magnam magni sit id molestias vero velit nobis architecto eum ipsa.</p>
-  </article>
-  <article class="step">
-    <img src="<%= url('images/icons/talk.png') %>" alt="Make friends">
-    <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
-  </article>
-</section>
+  <label class="active" for="guests">guests</label>
+  <label for="hosts">hosts</label>
 
-<!-- hosts -->
-<!--
-<section class="how-it-works">
-  <article class="step">
-    <img src="<%= url('images/icons/submit.png') %>" alt="Submit application">
-    <p>Pariatur nobis autem in dolorem ad suscipit similique provident maxime explicabo.</p>
-  </article>
-  <article class="step">
-    <img src="<%= url('images/icons/create.png') %>" alt="Create food">
-    <p>Quos magnam magni sit id molestias vero quo veniam velit nobis architecto eum ipsa.</p>
-  </article>
-  <article class="step">
-    <img src="<%= url('images/icons/paid.png') %>" alt="Get paid">
-    <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
-  </article>
+  <input type="radio" id="guests" name="how-it-works" class="toggle" checked>
+  <div class="togglable-content">
+    <article class="step">
+      <img src="<%= url('images/icons/browse.png') %>" alt="Browse events">
+      <p>Pariatur nobis autem in dolorem ad similique provident maxime explicabo.</p>
+    </article>
+    <article class="step">
+      <img src="<%= url('images/icons/join.png') %>" alt="Join event">
+      <p>Quos magnam magni sit id molestias vero velit nobis architecto eum ipsa.</p>
+    </article>
+    <article class="step">
+      <img src="<%= url('images/icons/talk.png') %>" alt="Make friends">
+      <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+    </article>
+  </div>
+
+  <input type="radio" id="hosts" name="how-it-works" class="toggle">
+  <div class="togglable-content">
+    <article class="step">
+      <img src="<%= url('images/icons/submit.png') %>" alt="Submit application">
+      <p>Pariatur nobis autem in dolorem ad suscipit similique provident maxime explicabo.</p>
+    </article>
+    <article class="step">
+      <img src="<%= url('images/icons/create.png') %>" alt="Create food">
+      <p>Quos magnam magni sit id molestias vero quo veniam velit nobis architecto eum ipsa.</p>
+    </article>
+    <article class="step">
+      <img src="<%= url('images/icons/paid.png') %>" alt="Get paid">
+      <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+    </article>
+  </div>
+
+  <script>
+    $('.toggle').change(function(e) {
+      var $labels = $('.how-it-works label');
+      $labels.removeClass('active');
+      $labels.filter('label[for="'+e.target.id+'"]').addClass('active');
+    });
+  </script>
 </section>
--->
 
 <section class="events">
   <article class="event">
