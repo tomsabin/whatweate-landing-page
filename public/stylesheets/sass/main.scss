@@ -1,5 +1,36 @@
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (min-width: 560px) { @content ; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 960px) { @content ; }
+  }
+  @else if $point == large-desktop {
+    @media (min-width: 1152px) { @content ; }
+  }
+}
+
+  // @include breakpoint(tablet) {
+  //   background-color: purple;
+  // }
+  // @include breakpoint(desktop) {
+  //   background-color: red;
+  // }
+  // @include breakpoint(large-desktop) {
+  //   background-color: black;
+  // }
+
+
+@font-face {
+  font-family: 'Bebas';
+  src: url(../fonts/bebas.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Helvetica', sans-serif
+}
+
 header {
-  background-color: blue;
   height: 60px;
   .logo {
 
@@ -7,7 +38,11 @@ header {
 }
 
 .proposition {
-  background-color: pink;
+  background: url(../images/dining-out.jpg) no-repeat top right 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 420px;
 
   .text-container {
@@ -15,7 +50,14 @@ header {
   }
 
   h1 {
-    // ...
+    font-family: 'Bebas', 'Helvetica', sans-serif;
+    font-size: 32px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: white;
   }
 
   .cta {
@@ -32,6 +74,15 @@ header {
     }
   }
 }
+
+// .newsletter {
+//   .input {
+
+//   }
+//   .submit {
+
+//   }
+// }
 
 .how-it-works {
   background-color: green;
