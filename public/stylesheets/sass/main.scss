@@ -32,8 +32,11 @@ body {
 
 header {
   height: 60px;
-  .logo {
 
+  img {
+    margin-left: 14px;
+    margin-top: 10px;
+    height: 40px;
   }
 }
 
@@ -52,11 +55,13 @@ header {
   h1 {
     font-family: 'Bebas', 'Helvetica', sans-serif;
     font-size: 32px;
+    padding: 14px;
     color: white;
   }
 
   h2 {
     font-size: 24px;
+    padding: 14px;
     color: white;
   }
 
@@ -68,9 +73,15 @@ header {
     width: 50%;
     float: left;
 
+    &:hover {
+      background-color: purple;
+    }
+
     a {
+      text-decoration: none;
       vertical-align: middle;
       display: table-cell;
+      color: white;
     }
   }
 }
