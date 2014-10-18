@@ -1,6 +1,6 @@
 header {
   background-color: blue;
-
+  height: 60px;
   .logo {
 
   }
@@ -8,22 +8,43 @@ header {
 
 .proposition {
   background-color: pink;
+  height: 420px;
+
+  .text-container {
+    height: 380px;
+  }
 
   h1 {
-
+    // ...
   }
 
   .cta {
+    background-color: red;
+    text-align: center;
+    display: table;
+    height: 40px;
+    width: 50%;
+    float: left;
 
+    a {
+      vertical-align: middle;
+      display: table-cell;
+    }
   }
 }
 
 .how-it-works {
   background-color: green;
+  padding: 14px;
 
   .step {
-    img {
+    text-align: center;
+    padding-bottom: 20px;
 
+    img {
+      padding-bottom: 14px;
+      height: 83px;
+      width: 83px;
     }
 
     p {
@@ -34,10 +55,15 @@ header {
 
 .events {
   background-color: purple;
+  padding: 14px;
 
   .event {
-    img {
+    background-color: rgba(0,0,0,0.2);
+    margin-bottom: 20px;
 
+    img {
+      height: 164px;
+      width: 100%;
     }
 
     h1 {
