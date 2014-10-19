@@ -1,21 +1,37 @@
 .how-it-works {
-  padding: 28px 14px 14px;
+  position: relative;
+  text-align: center;
+  margin: 0 14px;
+  height: 568px;
 
   .toggle {
     position: absolute;
     left: -999px;
   }
 
-  label.active {
-    color: pink;
-  }
-
   .toggle:not(:checked) + .togglable-content {
-    display: none;
+    z-index: 1;
   }
 
   .toggle:checked + .togglable-content {
-    display: block;
+    z-index: 2;
+  }
+
+  .togglable-content {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 30px;
+  }
+
+  label {
+    background-color: red;
+  }
+
+  label.active {
+    background-color: purple;
   }
 
   .step {

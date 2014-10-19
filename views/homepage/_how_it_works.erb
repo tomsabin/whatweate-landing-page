@@ -1,5 +1,5 @@
 <section class="how-it-works">
-  <label class="active" for="guests">guests</label>
+  <label for="guests">guests</label>
   <label for="hosts">hosts</label>
 
   <input type="radio" id="guests" name="how-it-works" class="toggle" checked>
@@ -35,6 +35,7 @@
   </div>
 
   <script>
+    $('label[for="guests"]').addClass('active');
     $('.toggle').change(function(e) {
       var $labels = $('.how-it-works label');
       $labels.removeClass('active');
