@@ -49,8 +49,10 @@
 
   h2 {
     padding-bottom: 44px;
+    word-spacing: 5px;
     text-shadow: 0 0 40px black;
-    line-height: 1.1em;
+    font-family: $secondary-font;
+    line-height: 1.2em;
     font-size: 1.4em;
 
     @include breakpoint(tablet) {
