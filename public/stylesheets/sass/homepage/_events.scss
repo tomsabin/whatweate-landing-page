@@ -1,21 +1,41 @@
 .events {
-  padding: 14px;
+  margin: 28px 14px;
+
+  h1 {
+    padding-bottom: 18px;
+    font-family: $secondary-font;
+    font-size: 1.6em;
+  }
 
   .event {
-    background-color: rgba(0,0,0,0.2);
+    background-color: $secondary-background-color;
     margin-bottom: 20px;
+    width: 292px;
+
+    &:hover {
+      background-color: #ece9e7;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
     img {
-      height: 164px;
       width: 100%;
     }
 
-    h1 {
+    h2, p {
+      padding: 7px 14px;
+    }
 
+    h2 {
+      padding-bottom: 0;
+      font-weight: bold;
     }
 
     p {
-
+      padding-bottom: 14px;
     }
   }
 }
