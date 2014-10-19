@@ -1,36 +1,63 @@
 <section class="how-it-works">
-  <label for="guests">guests</label>
-  <label for="hosts">hosts</label>
+  <%# CSS active class ? %>
+  <div class="label-container">
+    <label class="guests" for="guests">Guests</label>
+    <label class="hosts" for="hosts">Hosts</label>
+  </div>
 
   <input type="radio" id="guests" name="how-it-works" class="toggle" checked>
   <div class="togglable-content">
     <article class="step">
-      <img src="<%= url('images/icons/browse.png') %>" alt="Browse events">
-      <p>Pariatur nobis autem in dolorem ad similique provident maxime explicabo.</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/browse.png') %>" alt="Browse events">
+        </div>
+        <p>Pariatur nobis autem in dolorem ad similique provident maxime explicabo.</p>
+      </div>
     </article>
     <article class="step">
-      <img src="<%= url('images/icons/join.png') %>" alt="Join event">
-      <p>Quos magnam magni sit id molestias vero velit nobis architecto eum ipsa.</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/join.png') %>" alt="Join event">
+        </div>
+        <p>Quos magnam magni sit id molestias vero velit nobis architecto eum ipsa.</p>
+      </div>
     </article>
     <article class="step">
-      <img src="<%= url('images/icons/talk.png') %>" alt="Make friends">
-      <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/talk.png') %>" alt="Make friends">
+        </div>
+        <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+      </div>
     </article>
   </div>
 
   <input type="radio" id="hosts" name="how-it-works" class="toggle">
   <div class="togglable-content">
     <article class="step">
-      <img src="<%= url('images/icons/submit.png') %>" alt="Submit application">
-      <p>Pariatur nobis autem in dolorem ad suscipit similique provident maxime explicabo.</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/submit.png') %>" alt="Submit application">
+        </div>
+        <p>Pariatur nobis autem in dolorem ad suscipit similique provident maxime explicabo.</p>
+      </div>
     </article>
     <article class="step">
-      <img src="<%= url('images/icons/create.png') %>" alt="Create food">
-      <p>Quos magnam magni sit id molestias vero quo veniam velit nobis architecto eum ipsa.</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/create.png') %>" alt="Create food">
+        </div>
+        <p>Quos magnam magni sit id molestias vero quo veniam velit nobis architecto eum ipsa.</p>
+      </div>
     </article>
     <article class="step">
-      <img src="<%= url('images/icons/paid.png') %>" alt="Get paid">
-      <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+      <div class="content">
+        <div class="image-container">
+          <img src="<%= url('images/icons/paid.png') %>" alt="Get paid">
+        </div>
+        <p>Est repellendus, sit fugiat quaerat ducimus in!</p>
+      </div>
     </article>
   </div>
 

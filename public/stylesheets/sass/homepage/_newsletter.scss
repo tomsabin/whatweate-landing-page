@@ -1,5 +1,6 @@
 .newsletter {
-  margin: 14px;
+  margin-top: 28px;
+  padding: 14px;
 
   p {
     margin-bottom: 14px;
@@ -7,9 +8,8 @@
   }
 
   .input-container {
-    $input-color: #927E6F;
-
-    background-color: $input-color;
+    background-color: $secondary-background-color;
+    border: 1px solid $secondary-border-color;
     display: block;
     margin: 0 auto;
     width: 292px;
@@ -25,7 +25,7 @@
     }
 
     .input {
-      background: $input-color;
+      background: $secondary-background-color;
       outline: none;
       width: 206px;
       color: white;

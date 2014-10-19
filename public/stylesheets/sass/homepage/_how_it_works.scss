@@ -1,8 +1,10 @@
 .how-it-works {
+  margin-top: 28px;
+  background-color: $primary-background-color;
   position: relative;
   text-align: center;
-  margin: 0 14px;
-  height: 568px;
+  padding: 0 14px;
+  height: 400px;
 
   .toggle {
     position: absolute;
@@ -18,33 +20,91 @@
   }
 
   .togglable-content {
-    background-color: white;
+    background-color: $secondary-background-color;
+    // border-bottom: 1px solid $secondary-border-color;
+    // border-top: 1px solid $secondary-border-color;
+
+    padding-top: 20px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    top: 30px;
+    top: 36px;
+  }
+
+  .label-container {
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    z-index: 3;
+    width: auto;
   }
 
   label {
-    background-color: red;
-  }
+    background-color: $secondary-background-color;
+    // border: 1px solid $secondary-border-color;
+    // border-bottom: 1px solid $secondary-background-color;
 
-  label.active {
-    background-color: purple;
+    display: inline-block;
+    width: 120px;
+
+    font-family: $secondary-font;
+    font-size: 1.2em;
+    padding: 10px 0;
+
+    &.guests { margin-right: 14px; }
+    // &.guests { border-right: none }
+    // &.hosts { border-left: none }
+
+    &:hover,
+    &.active {
+      background-color: $primary-color;
+      color: white;
+    }
+
+    &.active {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        bottom: -11px;
+        left: 50px;
+
+        display: block;
+        content: '';
+        height: 0;
+        width: 0;
+
+        border-style: solid;
+        border-width: 12px 10px 0 10px;
+        border-color: $primary-color transparent transparent transparent;
+      }
+    }
   }
 
   .step {
-    text-align: center;
-    padding-bottom: 44px;
+    margin: 0 auto;
+    width: 320px;
 
-    img {
-      padding-bottom: 14px;
-      height: 83px;
+    .content {
+      display: table;
+      padding: 7px 28px;
+      height: 100px;
+    }
+
+    .image-container, p {
+      vertical-align: middle;
+      display: table-cell;
+    }
+
+    .image-container {
+      height: 84px;
+      width: 84px;
+      img { height: 64px }
     }
 
     p {
-
+      padding-left: 28px;
     }
   }
 }
