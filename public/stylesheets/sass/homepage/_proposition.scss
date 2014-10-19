@@ -16,6 +16,10 @@
     @include breakpoint(tablet) {
       width: 460px;
     }
+
+    @include breakpoint(tablet) {
+      width: 768px;
+    }
   }
 
   .content {

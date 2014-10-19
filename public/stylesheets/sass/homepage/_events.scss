@@ -4,12 +4,13 @@
   h1 {
     padding-bottom: 18px;
     font-family: $secondary-font;
+    text-align: center;
     font-size: 1.6em;
   }
 
   .event {
     background-color: $secondary-background-color;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     width: 292px;
 
     &:hover {
