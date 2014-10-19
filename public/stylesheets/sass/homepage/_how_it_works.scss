@@ -1,0 +1,34 @@
+.how-it-works {
+  padding: 28px 14px 14px;
+
+  .toggle {
+    position: absolute;
+    left: -999px;
+  }
+
+  label.active {
+    color: pink;
+  }
+
+  .toggle:not(:checked) + .togglable-content {
+    display: none;
+  }
+
+  .toggle:checked + .togglable-content {
+    display: block;
+  }
+
+  .step {
+    text-align: center;
+    padding-bottom: 44px;
+
+    img {
+      padding-bottom: 14px;
+      height: 83px;
+    }
+
+    p {
+
+    }
+  }
+}

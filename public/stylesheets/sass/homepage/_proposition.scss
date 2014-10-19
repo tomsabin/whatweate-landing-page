@@ -1,0 +1,53 @@
+.proposition {
+  background-color: #DC7A31;
+  background: url(../images/dining-out.jpg);
+  background: url(../images/dining-out.jpg) no-repeat top right 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 420px;
+
+  .text-container {
+
+  }
+
+  h1 {
+    margin-bottom: 14px;
+    font-family: $heading-font;
+    line-height: 42px;
+    font-size: 32px;
+    padding: 14px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 14px;
+    color: white;
+  }
+
+  .link-container {
+
+  }
+
+  // .cta {
+  //   background-color: red;
+  //   text-align: center;
+  //   display: table;
+  //   height: 40px;
+  //   width: 50%;
+  //   float: left;
+
+  //   &:hover {
+  //     background-color: purple;
+  //   }
+
+  //   a {
+  //     text-decoration: none;
+  //     vertical-align: middle;
+  //     display: table-cell;
+  //     color: white;
+  //   }
+  // }
+}
