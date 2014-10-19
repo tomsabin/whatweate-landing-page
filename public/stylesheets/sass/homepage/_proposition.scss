@@ -6,9 +6,13 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: table;
-  height: 508px;
-  width: 100%;
+
+  .container {
+    display: table;
+    margin: 0 auto;
+    height: 508px;
+    width: 320px;
+  }
 
   .content {
     vertical-align: middle;
@@ -22,30 +26,31 @@
   }
 
   h1, h2 {
-    padding-bottom: 44px;
+    padding-bottom: 36px;
   }
 
   h1 {
     text-shadow: 0 0 50px black;
-    font-family: $heading-font;
+    font-family: $secondary-font;
     line-height: 1.2em;
-    font-size: 3em;
+    font-size: 2.9em;
   }
 
   h2 {
     text-shadow: 0 0 40px black;
     line-height: 1.1em;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   a {
     background-color: $primary-color;
     display: block;
     margin: 0 auto 14px;
-    width: 140px;
+    width: 100px;
 
     text-decoration: none;
     text-transform: uppercase;
+    font-family: $secondary-font;
     text-align: center;
     font-size: 0.9em;
     padding: 10px;

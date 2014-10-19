@@ -1,8 +1,49 @@
-// .newsletter {
-//   .input {
+.newsletter {
+  margin: 14px;
 
-//   }
-//   .submit {
+  p {
+    margin-bottom: 14px;
+    text-align: center;
+  }
 
-//   }
-// }
+  .input-container {
+    $input-color: #927E6F;
+
+    background-color: $input-color;
+    display: block;
+    margin: 0 auto;
+    width: 292px;
+
+    .input,
+    .submit {
+      vertical-align: top;
+      font-family: $secondary-font;
+      font-size: 0.9em;
+      padding: 8px;
+      border: none;
+      margin: 0;
+    }
+
+    .input {
+      background: $input-color;
+      outline: none;
+      width: 206px;
+      color: white;
+    }
+
+    .submit {
+      background: $primary-color;
+      -webkit-border-radius: 0;
+      -webkit-appearance: none;
+      cursor: pointer;
+      float: right;
+      color: white;
+      width: 66px;
+
+      &:hover {
+        background: $primary-color-hover;
+      }
+    }
+  }
+
+}
