@@ -12,6 +12,10 @@
     margin: 0 auto;
     height: 508px;
     width: 320px;
+
+    @include breakpoint(tablet) {
+      width: 460px;
+    }
   }
 
   .content {
@@ -34,12 +38,20 @@
     font-family: $secondary-font;
     line-height: 1.2em;
     font-size: 2.9em;
+
+    @include breakpoint(tablet) {
+      font-size: 3.2em;
+    }
   }
 
   h2 {
     text-shadow: 0 0 40px black;
     line-height: 1.1em;
     font-size: 1.4em;
+
+    @include breakpoint(tablet) {
+      font-size: 1.8em;
+    }
   }
 
   a {
@@ -54,6 +66,13 @@
     text-align: center;
     font-size: 0.9em;
     padding: 10px;
+
+    @include breakpoint(tablet) {
+      font-size: 1em;
+      display: inline-block;
+      padding: 14px;
+      margin: 0 14px;
+    }
 
     &:hover {
       background: $primary-color-hover;
