@@ -20,6 +20,7 @@
 
   .togglable-content {
     background-color: $secondary-background-color;
+    background: linear-gradient($secondary-background-color, white,  $secondary-background-color);
     // border-bottom: 1px solid $secondary-border-color;
     // border-top: 1px solid $secondary-border-color;
 
