@@ -1,53 +1,57 @@
 .proposition {
-  background-color: #DC7A31;
+  background-color: $primary-color;
   background: url(../images/dining-out.jpg);
   background: url(../images/dining-out.jpg) no-repeat top right 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 420px;
+  display: table;
+  height: 508px;
+  width: 100%;
 
-  .text-container {
+  .content {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    padding: 14px;
+  }
 
+  h1, h2, a {
+    color: white;
+  }
+
+  h1, h2 {
+    padding-bottom: 44px;
   }
 
   h1 {
-    margin-bottom: 14px;
+    text-shadow: 0 0 50px black;
     font-family: $heading-font;
-    line-height: 42px;
-    font-size: 32px;
-    padding: 14px;
-    color: white;
+    line-height: 1.2em;
+    font-size: 3em;
   }
 
   h2 {
-    font-size: 24px;
-    padding: 14px;
-    color: white;
+    text-shadow: 0 0 40px black;
+    line-height: 1.1em;
+    font-size: 1.6em;
   }
 
-  .link-container {
+  a {
+    background-color: $primary-color;
+    display: block;
+    margin: 0 auto 14px;
+    width: 140px;
 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+
+    &:hover {
+      background: $primary-color-hover;
+    }
   }
-
-  // .cta {
-  //   background-color: red;
-  //   text-align: center;
-  //   display: table;
-  //   height: 40px;
-  //   width: 50%;
-  //   float: left;
-
-  //   &:hover {
-  //     background-color: purple;
-  //   }
-
-  //   a {
-  //     text-decoration: none;
-  //     vertical-align: middle;
-  //     display: table-cell;
-  //     color: white;
-  //   }
-  // }
 }
