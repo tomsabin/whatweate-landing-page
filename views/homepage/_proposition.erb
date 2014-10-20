@@ -4,16 +4,18 @@
       <h1>Bringing People Together Over Food.</h1>
       <h2>Find delicious intimate dining experiences near you.</h2>
       <a href="#events">Join a table</a>
-      <a href="https://tomsabin.typeform.com/to/LyUcfu" class="typeform-share" data-mode="1" target="_blank">Become a chef</a>
+      <a href="https://whatweate.typeform.com/to/IXZyhO" class="typeform-share" data-mode="1" target="_blank">Become a chef</a>
     </div>
   </div>
 
   <script>
-    $('a[href^="#"]').click(function (e) {
-      $('html, body').animate({
-        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-      }, 500);
-      return false;
+    $(document).ready(function () {
+      $('a[href^="#"]').click(function (e) {
+        $('html, body').animate({
+          scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 500);
+        return false;
+      });
     });
   </script>
 
