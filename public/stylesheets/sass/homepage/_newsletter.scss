@@ -11,7 +11,6 @@
     border: 1px solid $secondary-border-color;
     display: block;
     margin: 0 auto;
-    width: 292px;
 
     .input,
     .submit {
@@ -25,8 +24,8 @@
 
     .input {
       background: $secondary-background-color;
+      word-spacing: 2px;
       outline: none;
-      width: 206px;
       color: black;
     }
 
@@ -44,6 +43,25 @@
         background: $primary-color-hover;
         outline: 1px solid $primary-color-hover;
       }
+    }
+
+    width: 290px;
+    .name { width: 66px }
+    .email { width: 126px }
+    .submit { width: 66px }
+
+    @media (min-width: 380px) {
+      width: 352px;
+      .name { width: 90px }
+      .email { width: 164px }
+      .submit { width: 66px }
+    }
+
+    @media (min-width: 560px) {
+      width: 414px;
+      .name { width: 114px }
+      .email { width: 202px }
+      .submit { width: 66px }
     }
   }
 
