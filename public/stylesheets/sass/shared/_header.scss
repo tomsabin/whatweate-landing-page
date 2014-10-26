@@ -28,63 +28,129 @@ header {
     }
 
     .logo-icon {
-      height: 40px;
+      height: 36px;
+
+      @include breakpoint(tablet) {
+        height: 40px;
+      }
     }
 
     .logo-text {
       margin-left: 10px;
-      height: 30px;
+      height: 24px;
+
+      @include breakpoint(tablet) {
+        height: 30px;
+      }
     }
   }
 
   nav {
-    display: none;
+    position: relative;
+    padding-top: 32px;
+    float: right;
+
+    input {
+      position: absolute;
+      left: -999px;
+    }
+
+    label {
+      font-family: $secondary-font;
+      padding: 8px 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+
+    ul {
+      position: absolute;
+      display: none;
+      right: 0;
+      top: 72px;
+
+      &:before {
+        position: absolute;
+        right: 17px;
+        top: -10px;
+
+        display: block;
+        content: '';
+        height: 0;
+        width: 0;
+
+        border-style: solid;
+        border-width: 0 12px 10px 10px;
+        border-color: transparent transparent $primary-color transparent;
+      }
+    }
+
+    li {
+      background-color: $primary-color;
+      word-spacing: 1px;
+      font-family: $secondary-font;
+      padding: 10px 12px;
+      width: 90px;
+      color: white;
+
+      &:hover {
+        background-color: $primary-color-hover;
+      }
+    }
+
+    input:checked {
+      & + label {
+        background-color: $primary-color;
+        color: white;
+      }
+
+      & ~ ul {
+        display: block;
+      }
+    }
 
     @include breakpoint(desktop) {
-      display: block;
-      font-family: $primary-font;
-      float: right;
+      padding-top: 22px;
 
-      ul { margin: 18px 0 }
-
-      li {
-        margin-left: 20px;
-        display: inline-block;
-
-        text-decoration: none;
-        text-transform: uppercase;
-        word-spacing: 1px;
-        font-family: $secondary-font;
-        text-align: center;
-        font-size: 1.1em;
+      label {
+        display: none;
       }
 
-      li:hover {
-        a {
-          color: $primary-color;
+      ul {
+        position: relative;
+        top: 0;
+        display: block;
+
+        &:before {
+          display: none;
         }
       }
-    }
-  }
 
-  .cta {
-    background-color: $primary-color;
-    display: inline-block;
-    margin: 0 7px;
-    width: 100px;
+      li {
+        background-color: $primary-background-color;
+        margin-left: 10px;
+        display: inline-block;
+        color: black;
+        width: auto;
 
-    padding: 14px 10px;
-    color: white;
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+        }
 
-    @media (min-width: 380px) {
-      font-size: 1em;
-      display: inline-block;
-      padding: 14px;
-    }
+      }
 
-    &:hover {
-      background: $primary-color-hover;
-      color: white;
+      .cta li {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover  {
+          background-color: $primary-color-hover;
+        }
+      }
     }
   }
 }
