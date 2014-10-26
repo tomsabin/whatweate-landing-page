@@ -1,5 +1,5 @@
 .how-it-works {
-  background-color: $primary-background-color;
+  background-color: $secondary-background-color;
   padding: 14px 0;
 
   .label-container {
@@ -79,7 +79,6 @@
   }
 
   @include breakpoint(desktop) {
-    text-align: center;
 
     .toggle:checked + .togglable-content,
     .toggle:not(:checked) + .togglable-content {
@@ -135,20 +134,28 @@
       height: 100px;
     }
 
-    .image-container, p {
+    .text-container,
+    .image-container {
       vertical-align: middle;
       display: table-cell;
     }
 
     .image-container {
+      text-align: center;
       height: 84px;
       width: 84px;
       img { height: 64px }
     }
 
-    p {
+    .text-container {
       padding-left: 28px;
-      text-align: left;
+    }
+
+    h2 {
+      padding-bottom: 8px;
+      word-spacing: 2px;
+      font-family: $secondary-font;
+      font-size: 1em;
     }
   }
 }

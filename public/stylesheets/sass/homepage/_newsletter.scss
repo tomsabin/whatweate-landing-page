@@ -1,5 +1,6 @@
 .newsletter {
-  padding: 28px 14px 46px;
+  background-color: $primary-background-color;
+  padding: 28px 14px;
 
   p {
     margin-bottom: 14px;
@@ -7,7 +8,7 @@
   }
 
   .input-container {
-    background-color: $secondary-background-color;
+    background-color: white;
     border: 1px solid $secondary-border-color;
     display: block;
     margin: 0 auto;
@@ -23,7 +24,7 @@
     }
 
     .input {
-      background: $secondary-background-color;
+      background: white;
       word-spacing: 2px;
       outline: none;
       color: black;
