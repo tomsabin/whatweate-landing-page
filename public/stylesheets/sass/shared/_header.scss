@@ -1,12 +1,90 @@
 header {
   background-color: $primary-background-color;
-  max-width: 756px;
-  margin: 0 auto;
-  height: 60px;
+  position: fixed;
+  z-index: 4;
+  right: 0;
+  left: 0;
+  top: 0;
 
-  img {
-    margin-left: 14px;
-    margin-top: 10px;
-    height: 40px;
+  .container {
+    max-width: 1146px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav,
+  .logo {
+    margin: 0 14px;
+  }
+
+  .logo {
+    img {
+      vertical-align: middle;
+      padding: 18px 0;
+    }
+
+    .logo-icon {
+      height: 40px;
+    }
+
+    .logo-text {
+      margin-left: 10px;
+      height: 30px;
+    }
+  }
+
+  nav {
+    display: none;
+
+    @include breakpoint(desktop) {
+      display: block;
+      font-family: $primary-font;
+      float: right;
+
+      ul { margin: 18px 0 }
+
+      li {
+        margin-left: 20px;
+        display: inline-block;
+
+        text-decoration: none;
+        text-transform: uppercase;
+        word-spacing: 1px;
+        font-family: $secondary-font;
+        text-align: center;
+        font-size: 1.1em;
+      }
+
+      li:hover {
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .cta {
+    background-color: $primary-color;
+    display: inline-block;
+    margin: 0 7px;
+    width: 100px;
+
+    padding: 14px 10px;
+    color: white;
+
+    @media (min-width: 380px) {
+      font-size: 1em;
+      display: inline-block;
+      padding: 14px;
+    }
+
+    &:hover {
+      background: $primary-color-hover;
+      color: white;
+    }
   }
 }

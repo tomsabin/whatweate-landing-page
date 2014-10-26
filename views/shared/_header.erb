@@ -1,5 +1,22 @@
 <header>
-  <a href="/" alt="WhatWeAte" title="WhatWeAte">
-    <img src="<%= url('images/logo.png') %>" alt="WhatWeAte">
-  </a>
+  <div class="container">
+    <a href="/" alt="WhatWeAte" title="WhatWeAte" class="logo">
+      <img src="<%= url('images/logo-icon.png') %>" alt="Logo" class="logo-icon">
+      <img src="<%= url('images/logo-text.png') %>" alt="WhatWeAte" class="logo-text">
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#events">How it works</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="https://whatweate.typeform.com/to/IXZyhO" class="cta typeform-share" data-mode="1" target="_blank">Become a host</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>
+    (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+  </script>
 </header>
