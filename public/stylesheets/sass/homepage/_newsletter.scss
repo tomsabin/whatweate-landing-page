@@ -67,6 +67,17 @@
     }
   }
 
+  .response {
+    padding-top: 8px;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto;
+
+    @include breakpoint(tablet) {
+      max-width: 532px;
+    }
+  }
+
   @include breakpoint(tablet) {
     .input-container {
       margin: 0 auto;
