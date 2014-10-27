@@ -1,0 +1,80 @@
+footer {
+  background-color: $secondary-background-color;
+  padding: 14px;
+
+  .container {
+    max-width: 837px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .links {
+    li {
+      margin-bottom: 3px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 12px;
+    float: right;
+
+    a {
+      margin-left: 8px;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    img {
+      width: 32px;
+    }
+
+    @include breakpoint(tablet) {
+      margin-top: 16px;
+    }
+  }
+
+  .legal {
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    margin-top: 14px;
+
+    ul {
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    p {
+      color: #999;
+    }
+
+    @include breakpoint(tablet) {
+      padding-top: 14px;
+
+      ul {
+        float: right;
+      }
+
+      li {
+        margin-left: 16px;
+        display: inline-block;
+      }
+    }
+  }
+}
