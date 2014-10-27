@@ -76,6 +76,10 @@
     @include breakpoint(tablet) {
       max-width: 532px;
     }
+
+    @include breakpoint(desktop) {
+      max-width: 834px;
+    }
   }
 
   @include breakpoint(tablet) {
