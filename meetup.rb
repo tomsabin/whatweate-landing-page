@@ -17,12 +17,17 @@ class Meetup
 
   class Event
     def initialize(data)
+      @id    = data['id']          rescue ''
       @name  = data['name']        rescue ''
       @fee   = data['fee']         rescue ''
       @venue = data['venue']       rescue ''
       @time  = data['time']        rescue ''
       @url   = data['event_url']   rescue ''
       @desc  = data['description'] rescue ''
+    end
+
+    def id
+      @id
     end
 
     def name
@@ -38,7 +43,7 @@ class Meetup
     end
 
     def date
-      Time.at(@time/1000).strftime("%F") rescue ''
+      Time.at(@time/1000).strftime("%e %b %Y") rescue ''
     end
 
     def description
