@@ -1,6 +1,12 @@
 .events {
   background-color: $primary-background-color;
-  padding: 28px 14px;
+  text-align: center;
+  padding: 28px 7px;
+
+  .container {
+    max-width: 926px;
+    margin: 0 auto;
+  }
 
   h1 {
     padding-bottom: 18px;
@@ -12,7 +18,10 @@
 
   .event {
     background-color: $secondary-background-color;
-    margin: 0 auto 20px;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 20px 7px;
     width: 292px;
 
     &:hover {
@@ -39,6 +48,13 @@
 
     p {
       padding-bottom: 14px;
+    }
+
+    .details {
+      padding: 8px 14px 4px;
+      .price {
+        float: right;
+      }
     }
   }
 }

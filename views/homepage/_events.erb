@@ -1,12 +1,30 @@
 <section class="events">
-  <a name="events"></a>
-  <h1>Upcoming events</h1>
+  <div class="container">
+    <a name="events"></a>
+    <h1>Upcoming events</h1>
 
-  <article class="event">
-    <a href="http://www.meetup.com/Food-Lovers-in-London/events/211061432/" alt="Contemporary Japanese Tasting Menu" title="Contemporary Japanese Tasting Menu">
-      <img src="images/event.jpg" alt="Event">
-      <h2>Contemporary Japanese Tasting Menu</h2>
-      <p>Aperiam mollitia recusandae ex illo deleniti consequatur consectetur veniam nulla</p>
-    </a>
-  </article>
+    <% @events.each do |event| %>
+      <article class="event">
+        <a href="<%= event.event_url %>" title="<%= event.name %>">
+          <img src="<%= event.photo_url %>" alt="<%= event.name %>">
+          <h2><%= event.name %></h2>
+
+          <div class="details">
+            <span class="date"><%= event.date %></span>
+            <span class="price"><%= event.fee %></span>
+          </div>
+
+          <p>
+            <%= event.description %>
+          </p>
+
+          <% if !event.venue.empty? %>
+            <p>
+              <%= event.venue %>
+            </p>
+          <% end %>
+        </a>
+      </article>
+    <% end %>
+  </div>
 </section>
