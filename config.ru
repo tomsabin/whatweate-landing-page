@@ -2,8 +2,11 @@ require 'bundler'
 Bundler.require(:default)
 require 'sass/plugin/rack'
 
-require 'dotenv'
-Dotenv.load
+begin
+  require 'dotenv'
+rescue LoadError
+end
+Dotenv.load if defined? Dotenv
 
 require './meetup'
 require './app'
