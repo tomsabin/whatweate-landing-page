@@ -35,7 +35,7 @@ class Meetup
     end
 
     def fee
-      "£#{@fee['amount']}" rescue ''
+      "£#{'%.2f' % @fee['amount']}" rescue ''
     end
 
     def venue
