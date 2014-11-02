@@ -51,7 +51,7 @@ class Meetup
 
   class Event
     attr_accessor :photo
-    attr_reader   :id, :name, :event_url
+    attr_reader   :id, :name, :url
 
     def initialize(data)
       @id    = data['id']          rescue ''
