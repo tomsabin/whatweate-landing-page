@@ -72,7 +72,12 @@ class Meetup
     end
 
     def date
-      Time.at(@time/1000).strftime("%e %b %Y") rescue ''
+      begin
+        time = Time.at(@time/1000)
+        time.strftime("%l:%M%p, %e#{ordinal(time.day)} %b %Y")
+      rescue
+        ''
+      end
     end
 
     def description
@@ -82,5 +87,22 @@ class Meetup
     def photo_url
       @photo.url rescue 'images/event.png'
     end
+
+    private
+      # TODO improve
+      def ordinal(number)
+        abs_number = number.to_i.abs
+
+        if (11..13).include?(abs_number % 100)
+          "th"
+        else
+          case abs_number % 10
+            when 1; "st"
+            when 2; "nd"
+            when 3; "rd"
+            else    "th"
+          end
+        end
+      end
   end
 end
