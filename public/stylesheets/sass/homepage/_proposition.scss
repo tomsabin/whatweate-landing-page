@@ -71,15 +71,15 @@
     word-spacing: 1px;
     font-family: $secondary-font;
     text-align: center;
-    font-size: 1.8em;
-    padding: 24px 34px 28px;
+    font-size: 1.4em;
+    padding: 18px 24px 20px;
 
     @include breakpoint(tablet) {
-      font-size: 2.1em;
+      font-size: 1.6em;
     }
 
     @include breakpoint(desktop) {
-      font-size: 2.4em;
+      font-size: 1.8em;
     }
 
     &:hover {

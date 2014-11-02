@@ -27,7 +27,7 @@ footer {
   }
 
   .social {
-    margin-top: 12px;
+    margin-top: 4px;
     float: right;
 
     a {
@@ -43,7 +43,7 @@ footer {
     }
 
     @include breakpoint(tablet) {
-      margin-top: 16px;
+      margin-top: 6px;
     }
   }
 
