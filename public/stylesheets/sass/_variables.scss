@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Pacifico';
+  src: url(../fonts/pacifico.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Bebas';
   src: url(../fonts/bebas.ttf) format('truetype');
 }
@@ -8,6 +13,7 @@
   src: url(../fonts/carrois-gothic.ttf) format('truetype');
 }
 
+$brand-font: 'Pacifico', 'Helvetica', sans-serif;
 $primary-font: 'Carrois Gothic', 'Helvetica', sans-serif;
 $secondary-font: 'Bebas', 'Helvetica', sans-serif;
 $base-font-size: 14px;
