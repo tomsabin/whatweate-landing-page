@@ -68,7 +68,7 @@ class Meetup
     end
 
     def venue
-      @venue['name'] rescue ''
+      [@venue['address_1'], @venue['city']].join(', ') rescue ''
     end
 
     def date
