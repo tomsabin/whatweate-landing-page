@@ -80,7 +80,7 @@ class Meetup
     end
 
     def photo_url
-      @photo.url rescue ''
+      @photo.url rescue 'images/event.png'
     end
   end
 end
