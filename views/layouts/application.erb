@@ -16,6 +16,9 @@
       ga('create', 'UA-55882501-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <!--[if lt IE 9]>
+      <script src="<%= url('javascript/html5shiv.min.js') %>"></script>
+    <![endif]-->
   </head>
   <body>
     <%= yield %>
