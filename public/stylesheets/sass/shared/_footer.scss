@@ -30,17 +30,39 @@ footer {
     margin-top: 4px;
     float: right;
 
+    .twitter {
+      background-image: url(../images/icons/twitter-w.png);
+      &:hover {
+        background-image: url(../images/icons/twitter-h.png);
+      }
+    }
+
+    .facebook {
+      background-image: url(../images/icons/facebook-w.png);
+      &:hover {
+        background-image: url(../images/icons/facebook-h.png);
+      }
+    }
+
+    .instagram {
+      background-image: url(../images/icons/instagram-w.png);
+      &:hover {
+        background-image: url(../images/icons/instagram-h.png);
+      }
+    }
+
     a {
+      background-repeat: no-repeat;
+      background-position: center;
+      -moz-background-size: 100%;
+      background-size: 100%;
+      text-indent: -9999px;
       margin-left: 8px;
-    }
-
-    li {
       display: inline-block;
-    }
-
-    img {
+      height: 32px;
       width: 32px;
     }
+
 
     @include breakpoint(tablet) {
       margin-top: 6px;
