@@ -8,7 +8,7 @@
     <% else %>
       <% @events.each do |event| %>
         <article class="event">
-          <a href="<%= event.url %>" title="<%= event.name %>">
+          <a href="<%= event.url %>" title="<%= event.name %>" data-ga="events">
             <img src="<%= event.photo_url %>" alt="<%= event.name %>">
             <h2><%= event.name %></h2>
 
